@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--w3school css framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>My Blog</title>
+    </head>
+
+    <body>
+        <!-- Navbar(sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a href="javscript:void(0)"
+                    class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+                    onclick="openNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a href="#home" class="w3-bar-item w3-button">HOME</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORFOLIO</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i>
+                    CONTACT</a>
+                <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-hover-red w3-right"><i
+                        class="fa fa-search"></i></a>
+            </div>
+            <!-- Navigation for small screen -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+                <a href="#about" class="w3-bar-item w3-button">PORTFOLIO</a>
+                <a href="#about" class="w3-bar-item w3-button">CONTACT</a>
+                <a href="#about" class="w3-bar-item w3-button">SEARCH</a>
+            </div>
+        </div>
+        <!-- First Parallax Image with Logo text  -->
+        <div class="bgimg-1 w3-opacity-min w3-display-container" id="home">
+            <div class="w3-display-middle" style="white-space: nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span
+                        class="w3-hide-small">WEBSITE</span> LOGO</span>
+            </div>
+        </div>
+        <div class=" w3-container w3-content w3-padding-64" id="about">
+            <h2 class="w3-center">ABOUT ME</h2>
+            <p class="w3-center"><i>I love photography</i></p>
+            <p class="w3-justify">We have created a fictional "personal" website/blog, and our fictional character is a
+                hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <div class="w3-row w3-content">
+                <div class="w3-col m6 w3-center w3-padding-large">
+                    <p><b><i class="fa fa-user w3-margin-right"></i> My Name</b></p>
+                    <img src="img/hero.png" alt="avatar2"
+                        class="w3-image bgimg-2 w3-round w3-opacity w3-hover-opacity-off">
+                </div>
+                <div class="w3-col m6 w3-padding-large w3-hide-small">
+                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+
+            </div>
+            <!-- Progress bars -->
+
+            <p class="w3-center w3-large w3-padding-16">Im really good at:</p>
+            <p class=" w3-wide"><i class="fa fa-camera"></i> Photography</p>
+            <div class="w3-light-gray">
+                <div class="w3-padding-small w3-dark-gray w3-container w3-center" style="width: 90%;">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-laptop"></i> Web Design</p>
+            <div class="w3-light-gray">
+                <div class="w3-padding-small w3-dark-gray w3-container w3-center" style="width: 85%;">85%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-image"></i> Photoshop</p>
+            <div class="w3-light-gray">
+                <div class="w3-padding-small w3-dark-gray w3-container w3-center" style="width: 75%;">75%</div>
+            </div>
+        </div>
+        <!-- Satisfaction rate -->
+        <div class="w3-padding-16 w3-dark-gray w3-row w3-center">
+            <div class="w3-section w3-quarter">
+                <span class="w3-xlarge">14+</span><br>
+                Partners
+            </div>
+            <div class="w3-section w3-quarter">
+                <span class="w3-xlarge">55+</span><br>
+                Projects Done
+            </div>
+            <div class="w3-section w3-quarter">
+                <span class="w3-xlarge">89+</span><br>
+                Happy Clients
+            </div>
+            <div class="w3-section w3-quarter">
+                <span class="w3-xlarge">150+</span><br>
+                Meetings
+            </div>
+        </div>
+
+        <div class="w3-display-container">
+            <img src="img/port5.jpg" alt="summer" class="w3-image bgimg-2 w3-opacity-min"
+                style="width: 100%; height: 80%;">
+            <div class="w3-display-middle">
+                <span class="w3-xxlarge w3-text-black w3-wide">PORTFOLIO</span>
+            </div>
+        </div>
+        <!-- My work -->
+        <div class="w3-section w3-padding-64 w3-content w3-center">
+            <p class=" w3-large">MY WORK</p>
+            <p><em>Here are some of my latest lorem work ipsum tipsum. <br>
+                    Click on the images to make them bigger</em></p>
+            <div class="w3-row-padding">
+                <div class="w3-col  m3">
+                    <img src="img/Barn House.jpg" alt="The Barn house Designed by arcitects " class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this);">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/Brick house.jpg" alt="The Brick house in the Beckers street " class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this);">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/summer.jpg" alt="The Summer house for resting on weekends" class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this)">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/chef.jpg" alt="the cheif of Shanpol restorant " style="width: 100%; cursor: pointer;"
+                        class="w3-hover-opacity" onclick="openImg(this);">
+                </div>
+            </div>
+            <div class="w3-row-padding w3-section">
+                <div class="w3-col m3">
+                    <img src="img/newyork.jpg" alt="The New York city  " class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this);">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/sanfran.jpg" alt="The San Fancisco " class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this);">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/paris.jpg" alt="Paris " class="w3-hover-opacity" style="width: 100%; cursor: pointer;"
+                        onclick="openImg(this);">
+                </div>
+                <div class="w3-col m3">
+                    <img src="img/newyork.jpg" alt="newyork" class="w3-hover-opacity"
+                        style="width: 100%; cursor: pointer;" onclick="openImg(this);">
+
+                </div>
+                <button class="w3-button w3-light-gray w3-padding-large" style="margin-top:64px;">LOAD MORE</button>
+            </div>
+
+        </div>
+        <!-- Modal for full size imges on click -->
+        <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
+            <span class="w3-button w3-display-topright w3-large w3-black" title="close the modal"><i
+                    class="fa fa-remove"></i></span>
+            <div class="w3-modal-content w3-animate-zoom w3-center w3-padding-64 w3-transparent">
+                <img id="img01" class="w3-image">
+                <p id="caption" class="w3-opacity w3-large w3-text-white"></p>
+            </div>
+        </div>
+        <div class="w3-section w3-display-container bgimg-3 w3-opacity-min" id="contact">
+            <img src="img/TedTalks2.jpg" alt="mycontact" style="width: 100%;">
+            <div class="w3-display-middle w3-wide w3-text-white">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+        <div class="w3-container w3-content w3-row w3-padding-64">
+            <h3 class="w3-center">WHERE I WORK</h3>
+            <p class="w3-center"><em>I'd love your feedback!</em></p>
+            <div class="w3-row w3-section w3-padding-32">
+                <div class="w3-col m4 w3-container">
+                    <img src="img/locatin.jpg" alt="location" style="width: 100%;" class="w3-round w3-image">
+                </div>
+                <div class="w3-panel w3-col m8">
+                    <div class="w3-large w3-margin-bottom">
+                        <i class="fa fa-map-marker w3-xlarge w3-margin-right w3-hover-text-black fa-fw"></i>Warsow,
+                        Poland <br>
+                        <i class="fa fa-phone w3-xlarge w3-margin-right w3-hover-text-black fa-fw"></i>Phone: +48
+                        88649789 <br>
+                        <i class="fa fa-envelope w3-xlarge w3-margin-right w3-hover-text-black fa-fw"></i>Email:
+                        mail@mail.com <br>
+                    </div>
+                    <p>Swing by for a cup of <span class="fa fa-coffee"></span>, or leave me a note:</p>
+                    <form action="" method="get">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half ">
+                                <input type="text" class="w3-input w3-border" placeholder="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input type="text" class="w3-input w3-border" placeholder="Email">
+                            </div>
+                        </div>
+                        <input type="text" class="w3-input w3-border" placeholder="Message">
+                        <button class="w3-button w3-black w3-right w3-large w3-section" type="submit"><i
+                                class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Footer part -->
+        <footer class="bgimg-3 w3-black w3-padding-64 w3-opacity w3-hover-opacity-off w3-center">
+            <a href="#home" class="w3-button w3-white"><i class="fa fa-arrow-up w3-text w3-margin-right"></i>To the
+                top</a>
+            <div class="w3-section w3-xlarge">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                    class="w3-hover-text-green">Azicom</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>
